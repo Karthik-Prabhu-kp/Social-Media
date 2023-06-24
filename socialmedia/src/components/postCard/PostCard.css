@@ -1,0 +1,42 @@
+.post-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+
+    width: 400px; /* Adjust the width as per your requirement */
+    height: auto;
+    padding: 20px;    
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+  }
+
+  .post-card p {
+    margin-bottom: 10px;
+  }
+  
+  .post-username {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .post-content {
+    margin-bottom: 10px;
+  }
+  
+  .post-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .post-buttons button {
+    background: none;
+    border: none;
+    padding: 5px;
+  }
+  
+  /* Adjust the styling of the font-awesome icons as needed */
+  .fa-regular {
+    /* Your icon styling */
+  }
+  

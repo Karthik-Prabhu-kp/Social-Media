@@ -1,0 +1,25 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #cccccc;
+  }
+  
+  .navbar-item {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .profile {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: purple;
+    color: #ffffff;
+    text-align: center;
+    line-height: 40px;
+  }
+  

@@ -1,0 +1,21 @@
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+  }
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  text-decoration: none;
+  /* color: #000000; */
+}
+
+.sidebar-item i {
+    margin-right: 10px;
+  }
+
+.sidebar-item span {
+  margin-left: 10px;
+}
