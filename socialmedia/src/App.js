@@ -8,6 +8,7 @@ import SignUp from "./Pages/Login/SignUp";
 import Explore from "./Pages/Explore/Explore";
 import Home from "./Pages/Home/Home";
 import PrivateRoute from "./Pages/Login/PrivateRoute";
+import Bookmark from "./Pages/Bookmark.js/Bookmark";
 
 function App() {
   return (
@@ -19,7 +20,16 @@ function App() {
           </PrivateRoute>}/>
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<SignUp />} />
-      <Route path="/explore" element={<Explore />} />
+      <Route path="/explore" 
+        element={
+          <PrivateRoute>
+            <Explore />
+          </PrivateRoute>} />
+      <Route path="/bookmark" 
+        element={
+          <PrivateRoute>
+            <Bookmark />
+          </PrivateRoute>} />
       <Route path="*" element={<Error/>} />
     </Routes>
   );

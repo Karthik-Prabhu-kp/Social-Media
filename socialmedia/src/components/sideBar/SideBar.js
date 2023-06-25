@@ -14,7 +14,7 @@ function SideBar() {
             <i className="fa-sharp fa-solid fa-compass"></i>
             <span>Explore</span>
         </NavLink>
-        <NavLink to="/signup" className="sidebar-item" >
+        <NavLink to="/bookmark" className="sidebar-item" >
             <i className="fa-solid fa-bookmark"></i>
             <span>Bookmark</span>
         </NavLink>

@@ -21,7 +21,23 @@ function PostCard({ props, likeCount }) {
             authorization: token,
           },
         }
-      );
+      );console.log(response)
+    } catch(e){
+      console.error("Error!",e);
+    }
+  };
+
+  const bookmarkClicked = async () => {
+    try {
+      const response = await axios.post(
+        `/api/users/bookmark/:postId/`,
+        {},
+        {
+          headers: {
+            authorization: token,
+          },
+        }
+      );console.log(response)
     } catch(e){
       console.error("Error!",e);
     }
@@ -35,8 +51,8 @@ function PostCard({ props, likeCount }) {
       <p className="post-username">@{props.username}</p>
       <p className="post-content">{props.content}</p>
       <div className="post-buttons">
-        <button onClick={likeClicked}>{}<i className="fa-regular fa-heart"></i></button>
-        <button><i className="fa-regular fa-bookmark"></i></button>
+        <button onClick={likeClicked}>{props.likes.likeCount}<i className="fa-regular fa-heart"></i></button>
+        <button onClick={bookmarkClicked}><i className="fa-regular fa-bookmark"></i></button>
         <button><i className="fa-regular fa-comment"></i></button>
       </div>
     </div>

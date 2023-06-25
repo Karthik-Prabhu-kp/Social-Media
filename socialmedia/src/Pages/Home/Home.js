@@ -16,14 +16,8 @@ function Home() {
   const getData = async () => {
     try {
       const response = await axios.get(`/api/posts/user/${user.username}`);
-      console.log(response.data.posts)
+      
       setUserPosts(response.data.posts);
-      // dataDispatch({
-      //   type: ACTION_TYPE.,
-      //   payload: {
-      //     allPosts: response.data.posts,
-      //   },
-      // });
     } catch {
       console.error("Error!");
     }
@@ -33,14 +27,14 @@ function Home() {
  * send POST Request at /api/user/posts/
  * body contains {content}
  * */
+//"/api/posts ??
 
-  const postData = async () => {
-    console.log(postInput)
-    const content = postInput
+  const postData = async () => {   //call error - no content goes in 
+    console.log(postInput,"wat u type")
     try {
       const response = await axios.post(
-        `/api/user/posts/`,
-        {content},
+        `/api/posts`,
+        {content: `${postInput}`},
         {
           headers: {
             authorization: token,
