@@ -11,24 +11,24 @@ import "./Explore.css"
 function Explore() {
   const { dataDispatch, allPosts } = useData();
 
-  const getData = async () => {
-    try {
-      const response = await axios.get('/api/posts');
-      console.log(response.data.posts);
-      dataDispatch({
-        type: ACTION_TYPE.GET_ALL_POSTS,
-        payload: {
-          allPosts: response.data.posts,
-        },
-      });
-    } catch {
-      console.error("Error!");
-    }
-  };
+  // const getData = async () => {
+  //   try {
+  //     const response = await axios.get('/api/posts');
+  //     console.log(response.data.posts);
+  //     dataDispatch({
+  //       type: ACTION_TYPE.GET_ALL_POSTS,
+  //       payload: {
+  //         allPosts: response.data.posts,
+  //       },
+  //     });
+  //   } catch {
+  //     console.error("Error!");
+  //   }
+  // };
 
-  useEffect(() => {
-    getData();
-  }, []);
+  // useEffect(() => {
+  //   getData();
+  // }, []);
 
   return (
     <div className="explore">

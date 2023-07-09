@@ -5,6 +5,7 @@ export const initialState = {
     token: '',
     user: [],
     allPosts: [],
+    bookmarks: []
 }
 
 
@@ -26,6 +27,11 @@ export function DataReducer(state,action) {
             return{
                 ...state,
                 allPosts: action.payload.allPosts
-            }
+            };
+        case ACTION_TYPE.GET_BOOKMARKS:
+            return{
+                ...state,
+                bookmarks: action.payload.bookmarks
+            };
     }
 };

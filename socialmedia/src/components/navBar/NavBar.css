@@ -16,8 +16,8 @@
     display: inline-block;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
-    background-color: purple;
+    border-radius: 50%; 
+    background-color: rgb(127, 47, 127);
     color: #ffffff;
     text-align: center;
     line-height: 40px;

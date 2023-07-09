@@ -10,7 +10,7 @@ function NavBar() {
             <span>Fit Together</span>
         </NavLink>
 
-        <NavLink to="/" className="navbar-item">
+        <NavLink to="/profile" className="navbar-item">
             <span className='profile'>Profile</span>
         </NavLink>
 
